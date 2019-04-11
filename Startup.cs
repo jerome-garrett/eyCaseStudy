@@ -30,6 +30,7 @@ namespace EYCaseStudy.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<ISaleRepository, SaleRepository>();
+            services.AddScoped<ILegalEntityRepository, LegalEntityRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddAutoMapper();
             services.AddDbContext<DataContext>(options => options.UseSqlServer(Configuration.GetConnectionString("EYCaseStudyDB")));
