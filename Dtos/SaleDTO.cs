@@ -1,9 +1,9 @@
 namespace EYCaseStudy.API.Dtos
 {
-    public class ProductDTO
+    public class SaleDTO
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Product { get; set; }
         public string ProductLine { get; set; }
         public string BusinessUnit { get; set; }
         public int QuantitySold { get; set; }
