@@ -25,6 +25,5 @@ namespace EYCaseStudy.API.Controllers
            var result =  repo.GetPivotTable(id);
            return result;
         }
-
     }
 }
